@@ -272,7 +272,10 @@ void shift(T* shiftedArray, int size, int shift) {
 		int sizeOfT = sizeof(T);
 
 		// Переставляємо частини масиву
-		if (shiftIsPositive ^ optimize)
+		int one = shiftIsPositive ? 1 : 0;
+		one += optimize ? 1 : 0;
+		int two = (one > 0) && (one < 2);
+		if (two)
 			// При додатньому зсувові , меншому                ніж половина розміру зсовуваного масиву
 			// Або від'ємному зсувові , більшому , по модулю , ніж половина розміру зсовуваного масиву
 		{
