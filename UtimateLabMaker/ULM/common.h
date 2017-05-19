@@ -26,10 +26,28 @@ void wrong_arg() {
 	std::cout << wrong_arg_text;
 }
 
+int digitInput()
+{
+  char digit;
+  std::cin >> digit;
+  std::cin.clear();
+  std::cin.ignore(1);
+  return atoi(&digit);
+}
+
+void digitInput(int& var)
+{
+  char digit;
+  std::cin >> digit;
+  std::cin.clear();
+  std::cin.ignore(1);
+  var = atoi(&digit);
+}
+
 // Очистка буферу
 void flush() {
 	std::cin.clear();
-	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
 }
 
 // Вивід запиту для задання змінної у діапазоні від заданного числа з виводом порогу
