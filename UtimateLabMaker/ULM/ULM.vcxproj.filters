@@ -18,10 +18,13 @@
     <ClInclude Include="common.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="list.h">
+    <ClInclude Include="menu.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="menu.h">
+    <ClInclude Include="TheDoctorWhoo.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Metasfer0us.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>

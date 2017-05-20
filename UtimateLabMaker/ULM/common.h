@@ -52,7 +52,7 @@ void flush() {
 
 // Вивід запиту для задання змінної у діапазоні від заданного числа з виводом порогу
 template <typename inType>
-void input(std::string msg, int from, inType &var) {
+void input(std::string msg, inType from, inType &var) {
 	bool check = true;
 	while (check) {
 		std::cout << msg << " (Від " << from << ") : ";
@@ -69,7 +69,7 @@ void input(std::string msg, int from, inType &var) {
 
 // Вивід запиту для задання змінної у діапазоні від/до заданного числа з виводом порогів
 template <typename inType>
-void input(std::string msg, int from, int to, inType &var) {
+void input(std::string msg, inType from, inType to, inType &var) {
 	bool check = true;
 	while (check) {
 		std::cout << msg << " (Від " << from << " до " << to << ") : ";
@@ -86,7 +86,7 @@ void input(std::string msg, int from, int to, inType &var) {
 
 // Вивід запиту для задання змінної у діапазоні від/до заданного числа з заданням повідомлень про помилку вводу
 template <typename inType>
-void input(std::string msg, std::string too_low, std::string too_high, int from, int to, inType &var) {
+void input(std::string msg, std::string too_low, std::string too_high, inType from, inType to, inType &var) {
 	bool check = true;
 	while (check) {
 		std::cout << msg << " : ";
@@ -108,7 +108,7 @@ void input(std::string msg, std::string too_low, std::string too_high, int from,
 
 // Вивід запиту для задання змінної у діапазоні від/до заданного числа з заданням повідомленя про помилку вводу
 template <typename inType>
-void input(std::string msg, std::string not_in_range, int from, int to, inType &var) {
+void input(std::string msg, std::string not_in_range, inType from, inType to, inType &var) {
 	bool check = true;
 	while (check) {
 		std::cout << msg << " : ";

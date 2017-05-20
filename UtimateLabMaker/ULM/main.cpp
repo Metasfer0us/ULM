@@ -1,17 +1,20 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include "common.h"
-#include "list.h"
 #include "menu.h"
+#include "Metasfer0us.h"
+#include "TheDoctorWhoo.h"
 
 // Metasfer0us
 
 void main() {	
   ua();
- /* Menu mainMenu;
-  std::cout << "done \n";
-  mainMenu.addBack("test", []() {std::cout << "\n tested \n"; });
-  std::cout << "done \n";
-  mainMenu.call(1);*/
-  system("pause");
+  Menu main("Головне меню", "Вихід");
+  main.add("Тест", []() {
+    for (int toKek = 1; toKek != 0; input("Kek", toKek));
+    return 1;
+  });
+  main.add("Metasfer0us", metasfer0us);
+  main.add("TheDoctorWhoo", drWho);
+  main.cycle();
 }
